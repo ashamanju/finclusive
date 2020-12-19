@@ -1,0 +1,564 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+.vl {
+  border-left: 1px solid #cea5b9;;
+  height: 1000px;
+}
+.selectedBody{
+  font-family: serif ;
+  color:  #1035af;
+  font-style: normal;
+ }
+.individualheading{
+  font-family: serif ;
+  color:  #f058c0;
+  font-style: normal;
+  font-weight: bold;
+
+}
+
+.greybody{
+  font-family: serif ;
+  color:  #c5c1c4;
+  font-style: normal;
+  font-weight: bold;
+}
+.darkgreybody{
+  font-family: serif ;
+  color:  #645f64;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.emailStyle{
+  font-family: serif ;
+  color:  #1035af;
+  font-style: italics;
+  font-weight: bold;
+}
+    html *
+{
+   font-size: 1em !important;
+   font-family: serif !important;
+}
+    /* Create three equal columns that floats next to each other */
+    .column30 {
+      float: left;
+      width: 30%;
+      padding: 25px;
+    }
+    .column10 {
+      float: left;
+      width: 10%;
+      padding: 25px;
+    }
+    .column40{
+      float: left;
+      width: 40%;
+      padding: 25px;
+    }
+    .column20{
+      float: left;
+      width: 20%;
+      padding: 25px;
+    }
+    .column60 {
+      float: left;
+      width: 60%;
+      padding: 25px;
+    }
+    .column50 {
+      float: left;
+      width: 50%;
+      padding: 25px;
+    }
+    .column50Right {
+      float: right;
+      width: 50%;
+      padding: 25px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    image_box{
+    float: left;
+    width: 100%;
+    box-shadow: 0 0 4px 1px rgba(158,153,158,.36);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.image_box img{
+width:100%;
+}
+.pink_table table th{
+ background-color: #f058c0;
+ color:#fff;
+}
+.pink_table table td,.pink_table table th {
+   border:1px solid #f058c0;
+}
+.pink_table{
+margin-bottom:30px;
+}
+
+.pink_single_table table th{
+ background-color: #f058c0;
+ color:#fff;
+ font-style: italic;
+}
+.pink_single_table  table td,.pink_single_table  table th {
+   border:1px solid #f058c0;
+   font-style: italic;
+}
+.pink_single_table  table td,.pink_single_table  table th {
+   border:1px solid #f058c0;
+   font-style: italic;
+    padding: 5px;
+}
+
+ .pinktableheader{
+  font-style: italic;
+  color:#f058c0;
+  font-weight:bold
+  
+ }
+.pink_single_table{
+margin-bottom:30px;
+}
+
+.lhrtable{
+
+  border-style: none;
+  border-collapse: separate;
+  border-spacing: 10px;
+  *border-collapse: expression('separate', cellSpacing='10px');
+
+}
+
+lhrtable  table td,.lhrtable  table th {
+ padding: 50px;
+    
+}
+lhrtable  table tr {
+
+     padding: 50px;
+}
+
+</style>
+
+<body>
+
+<div class="row" style="background: linear-gradient(#f0eeef, #f1ddec);"> 
+    <div class="column40"  > 
+      <span ><img src="../img/menu.png" alt=""  height="30px" /> </span>
+      <span ><img src="../img/Picture1.png" alt=""  height="70px " /> </span>
+    </div>
+    <div class="column40">
+    </div> 
+    <div class="column20" ><span style="color: #f163aa;"><img src="../img/Man1 (1).png" alt="" height="50" />&nbsp;&nbsp;Giles John</span>
+
+      <span ><img src="../img/settings.jpg" alt=""  height="30px" /> </span>
+      <span ><img src="../img/profile.png" alt=""  height="30px" /> </span>
+    </div>
+</div>
+<div style=" max-height: 900px;">
+<table style=" width: 100%;color: #cea5b9; border-bottom-style: hidden;border-right-style: hidden;border-left-style: hidden;border-top-style: solid; padding-top: 0px;" >
+<tbody style="margin: 0px;">
+<tr>
+<td style="width: 20%;  background: linear-gradient(#f0eeef, #f1ddec);"> 
+  <table class="lhrtable"   >
+  <tr style="border: hidden;">
+    <td class = "individualheading">
+      FINASTRA
+    </td>
+  </tr>
+  <tr>
+    <td class = "emailStyle" >
+      Phoenix
+    </td>
+  </tr>
+  <tr >
+    <td class = "darkgreybody"  >
+      Laser Pro 
+    </td>
+  </tr>
+  <tr >
+    <td class = "darkgreybody">
+Mortgage Bot
+    </td>
+  </tr>
+  <tr>
+    <td class = "darkgreybody"  >
+      Credit Quest
+    </td>
+  </tr>
+  <tr>
+    <td class = "darkgreybody" >
+      Digital Front Office
+    </td>
+  </tr>
+  <tr>
+    <td class = "darkgreybody" >
+Fusion Analytics    </td>
+  </tr>
+  <tr>
+    <td class = "darkgreybody" >
+ECM    </td>
+  </tr>
+  <tr>
+    <td class = "darkgreybody" >
+AVIP   </td>
+  </tr>
+  <tr>
+    <td class = "darkgreybody" >
+Total Transact   </td>
+  </tr>
+  <tr>
+    <td class = "darkgreybody" >
+DPX Pay  </td>
+  </tr>
+  <tr>
+    <td class = "darkgreybody" >
+Malazaui </td>
+  </tr>
+  <tr>
+    <td class = "darkgreybody" >
+GPP </td>
+  </tr>
+    
+  
+  </table>
+  <table class="lhrtable"   >
+    
+    <tr style="border: hidden;">
+      <td class = "individualheading">
+        OTHERS
+      </td>
+    </tr>
+    <tr>
+      <td class = "darkgreybody" >
+        Deluxe Checks
+      </td>
+    </tr>
+    <tr >
+      <td class = "darkgreybody"  >
+        BizChex 
+      </td>
+    </tr>
+    <tr >
+      <td class = "darkgreybody">
+      Chexsystems
+      </td>
+    </tr>
+    <tr>
+      <td class = "darkgreybody"  >
+        Acuant ID Scan
+      </td>
+    </tr>
+    <tr>
+      <td class = "darkgreybody" >
+        Send Grid
+      </td>
+    </tr>
+    <tr>
+      <td class = "darkgreybody" >
+  Cronfy  </td>
+    </tr>
+    <tr>
+      <td class = "darkgreybody" >
+  Monetra  </td>
+    </tr>
+  </table>
+  <table class="lhrtable"   >
+      
+        <tr style="border: hidden;">
+          <td class = "individualheading">
+            INDUSTRY NEWS
+          </td>
+        </tr>
+        <tr>
+          <td class = "darkgreybody" >
+            American Banker
+          </td>
+        </tr>
+        <tr >
+          <td class = "darkgreybody"  >
+            Financial News
+          </td>
+        </tr>
+        <tr >
+          <td class = "darkgreybody">
+      Finovate
+          </td>
+        </tr>
+        <tr >
+          <td class = "darkgreybody">
+      Finextra
+          </td>
+        </tr>
+ 
+  </table>
+  <table class="lhrtable"   >
+       
+        <tr style="border: hidden;">
+          <td class = "individualheading">
+            REGULATOR INFO
+          </td>
+        </tr>
+        <tr>
+          <td class = "darkgreybody" >
+            FDIC
+          </td>
+        </tr>
+        <tr >
+          <td class = "darkgreybody"  >
+            FRS
+          </td>
+        </tr>
+        <tr >
+          <td class = "darkgreybody">
+      FRB
+          </td>
+        </tr>
+        
+  </table>
+ 
+</td>
+<td>  <div class="vl"></div></td>
+<td style="width: 6 0%;">
+  <div class = "row">
+    <div class="column50" style="color: #f163aa;" > 
+      <span ><img src="../img/alert.png" alt=""  height="30px" />An additional $350 has been allotted for PPP funding</span>
+      </div>
+      <div class="column50"  > 
+        <form action="/action_page.php">
+          <input type="text"  id="fname" name="fname" placeholder="Enter Customer Name" style="text-align:center; color:white; background:#cea5b9;  border-radius:50px; height:30;" />
+        </form>
+        </div>
+  </div>
+ 
+  <div class = "row">
+    <div class="column30 pink_single_table"> 
+      <span >
+        <table class="table-bordered"  >
+        <tr style="border-bottom-style: hidden;">
+          <td class = "pinktableheader">
+            Checking PLUS 64231
+          </td>
+        </tr>
+        <tr style="border-bottom-style: hidden;">
+          <td class = "greybody" >
+            Av Bal  $301.00
+          </td>
+        </tr>
+        <tr style="border-bottom-style: hidden;">
+          <td class = "greybody"  >
+            Cu. Bal $534.00
+          </td>
+        </tr>
+        <tr style="border-bottom-style: hidden;">
+          <td class = "pinktableheader">
+            Savings PLUS 64231
+          </td>
+        </tr>
+        <tr style="border-bottom-style: hidden;">
+          <td class = "greybody"  >
+            Av Bal  $200.00
+          </td>
+        </tr>
+        <tr style="border-bottom-style: hidden;">
+          <td class = "greybody" >
+            Cu. Bal $314.00
+          </td>
+        </tr>
+        <tr style="border-bottom-style: hidden;">
+          <td class = "pinktableheader">
+            Max Loan 45634
+          </td>
+        </tr>
+        <tr style="border-bottom-style: hidden;">
+          <td class = "greybody" >
+            Av Bal  $823.00
+          </td>
+        </tr>
+        <tr style="border-top-style: hidden;">
+          <td class = "greybody" >
+            Cu. Bal $823.00
+          </td>
+        </tr>
+       
+        </table>
+      </span>
+      </div>
+      <div class="column40"  >
+          <span > <img src="../img/accountdetails.PNG" alt="" height="200" /></span>
+      </div>
+      <div class="column30 pink_single_table">
+        <span >
+          <table class="table-bordered"  >
+            <tr style="border-bottom-style: hidden;">
+              <td class = "pinktableheader">
+                MOLLIE ASHFORD
+              </td>
+            </tr>
+            <tr style="border-bottom-style: hidden;">
+              <td class = "greybody" >
+                Age:34 / Coffee Maker
+              </td>
+            </tr>
+            <tr style="border-bottom-style: hidden;">
+              <td class = "greybody" >
+                +11082342345
+              </td>
+            </tr>
+            <tr style="border-bottom-style: hidden;">
+              <td class = "emailStyle"  ><a href="#" >mollie.ashford@gmail.com</a>
+               
+              </td>
+            </tr>
+            <tr style="border-bottom-style: hidden;">
+              <td class = "pinktableheader">
+                Address 1, Address2 
+              </td>
+            </tr>
+            <tr style="border-top: hidden;">
+              <td class = "pinktableheader">
+               City, State
+              </td>
+            </tr>
+            </table>
+        </span>
+  </div>
+  </div>
+  <div class="row">
+    <div class="column30 individualheading">
+      OPPORTUNITIES
+    </div>
+    <div class="column40">
+    </div>
+    <div class="column30">
+     </div>
+  </div>
+  
+
+  </div>
+  <div class="pink_table">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">CATEGORY</th>
+         <th scope="col">PRODUCT</th>
+          <th scope="col">CSR</th>
+          <th scope="col">STARTDATE</th>
+          <th scope="col">SALESCYCLE</th>
+          <th scope="col">SOLD</th>
+        </tr>
+      </thead>
+      <tbody>
+       <tr>
+       <td>LOAN</td>
+          <td>MORTGAGE 1</td>
+          <td>JOHN S</td>
+          <td>10/12/2020</td>
+          <td>Declined</td>
+          <td>NO</td>
+        </tr>
+        <tr>
+       <td>IRA</td>
+          <td>IRA-6</td>
+          <td>CHRISTINA W</td>
+          <td>23/08/2020</td>
+          <td>Declined</td>
+          <td>NO</td>
+        </tr>
+        <tr>
+          <td>CD</td>
+          <td>CD-24</td>
+          <td>JEANIE J</td>
+          <td>12/05/2020</td>
+          <td>Declined</td>
+          <td>NO</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="row">
+      <div class="column30 individualheading">
+        OFFERS
+      </div>
+      <div class="column40">
+      </div>
+      <div class="column30">
+       </div>
+    </div>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4 col-12">
+    <div class="image_box">
+    <img src="../img/piggy.png">
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+    <div class="image_box">
+    <img src="../img/mortgage.png">
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+    <div class="image_box">
+    <img src="../img/health.png">
+    </div>
+    </div>
+    </div>
+    </div>
+</td>
+<td style="width: 1%;">  <div class="vl"></div></td>
+<td style="width: 20%;">
+  
+  <div class="pink_table" style = "width :90%">
+    <table class="table table-bordered" >
+      <thead>
+        <tr>
+          <th scope="col">Customer Support</th>
+        </tr>
+      </thead>
+      <tbody>
+       <tr>
+       <td>    <div class="image_box">
+        <img src="../img/custsupport.png"></td>
+
+        </tr>
+        <tr>
+       <td style="background-color: rgb(209, 202, 202);align-items: center; ">
+        <img src="../img/chat.png" height = "30px"/>
+        <img src="../img/phone.png" height = "30px"/>
+        <img src="../img/share.png" height = "30px"/>
+      </td>
+        </tr>
+      </tbody>
+    </table> 
+    </div> 
+    <div>
+      <img src="../img/calendar.PNG" height = "300px" width ="90%"/>
+    </div>
+    <div>
+      <img src="../img/exchange rates.PNG"height = "300px" width ="90%"/>
+    </div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

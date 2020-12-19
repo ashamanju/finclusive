@@ -1,0 +1,23 @@
+{
+  "name": "finclusive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "npx watchify ./public/main.js -o ./public/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^2.8.0",
+    "express": "^4.17.1",
+    "sentiment": "^5.0.2",
+    "simple-peer": "^9.9.3",
+    "socket.io": "^3.0.4"
+  },
+  "devDependencies": {
+    "watchify": "^3.11.1"
+  }
+}
