@@ -1,0 +1,164 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API for Tasks",
+    "description": "REST API for Tasks",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:5001",
+  "basePath": "/api/v1",
+  "tags": [
+    {
+      "name": "Tasks",
+      "description": "API for tasks in the system"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/tasks": {
+      "post": {
+        "tags": [
+          "Tasks"
+        ],
+        "description": "Create new task in system",
+        "parameters": [
+          {
+            "name": "task",
+            "in": "body",
+            "description": "Task that we want to create",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "New Task is created",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Tasks"
+        ],
+        "summary": "Get all tasks in system",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Tasks"
+            }
+          }
+        }
+      }
+    },
+    "/tasks/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "ID of Task that we want to find",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "tags": [
+          "Tasks"
+        ],
+        "summary": "Get Task with given ID",
+        "responses": {
+          "200": {
+            "description": "Task is found",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete tasks with given ID",
+        "tags": [
+          "Tasks"
+        ],
+        "responses": {
+          "200": {
+            "description": "Tasks is deleted",
+            "schema": {
+              "$ref": "#/definitions/Tasks"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update task with give ID",
+        "tags": [
+          "Tasks"
+        ],
+        "parameters": [
+          {
+            "name": "task",
+            "in": "body",
+            "description": "Task with new values of properties",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Task is updated",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Task": {
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "_id": {
+          "type": "string",
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string",
+          "uniqueItems": true
+        },
+        "rank": {
+          "type": "string"
+        },
+        "availabile": {
+          "type": "boolean"
+        }
+      }
+    },
+    "Tasks": {
+      "type": "array",
+      "$ref": "#/definitions/Task"
+    }
+  }
+}
